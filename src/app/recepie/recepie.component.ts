@@ -14,7 +14,10 @@ export class RecepieComponent implements OnInit {
   constructor(private recepieService:RecepieService){}
 
   ngOnInit(){
+    
     this.recepieService.recepieSelected.subscribe((recepie:Recepie)=>{this.selectedRecepie=recepie;})
+
+    //console.log("ddddd", this.recepieService.getRecepie())
 
   }
 

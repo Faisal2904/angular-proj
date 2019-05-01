@@ -18,6 +18,10 @@ export class ShoppingListComponent implements OnInit {
  ngOnInit(){
    this.ingredient=this.shoppingService.getIngredients();
    console.log('sadakdbakd'+this.ingredient)
+
+   this.shoppingService.ingredientChanged.subscribe(
+     (ingredien:Ingredient)=>{this.ingredient=ingredien}
+     )
  }
  
 }
