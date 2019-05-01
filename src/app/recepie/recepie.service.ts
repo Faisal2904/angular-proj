@@ -1,6 +1,8 @@
-import {EventEmitter} from '@angular/core';
+import {EventEmitter,Injectable} from '@angular/core';
 import { Recepie } from './recepie.model';
-import{Ingredient} from '../shared/ingredient.model'
+import{Ingredient} from '../shared/ingredient.model';
+import{ShoppingService} from '../shopping-list/shopping.service'
+@Injectable()
 export class RecepieService{
 
    recepieSelected=new EventEmitter<Recepie>();
@@ -17,12 +19,15 @@ private recepie:Recepie[]=[
       ])
   ];
 
+
+  constructor(private shoppingService:ShoppingService){}
+
   getRecepie(){
     return this.recepie.slice();
   }
 
   addIngredienttoShoppingist(ingredients:Ingredient[]){
-
+  this.shoppingService.addIngredient(ingredients);
   }
 
   

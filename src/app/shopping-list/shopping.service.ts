@@ -18,6 +18,11 @@ export class ShoppingService{
    this.ingredientChanged.emit(this.ingredient.slice());
  }
 
+ addIngredient(ingredient:Ingredient[]){
+   this.ingredient.push(...ingredient) //i will add ingredient sepreately in the array
+   this.ingredientChanged.emit(this.ingredient.slice());
+ }
+
 
 
   

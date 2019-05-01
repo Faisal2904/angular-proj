@@ -17,7 +17,7 @@ export class RecepieDetailsComponent  {
 
   onAddtoShoppingList(){
 
-    this.recepieService.addIngredienttoShoppingist(recepiedetailsSelected.ingredient)
+    this.recepieService.addIngredienttoShoppingist(this.recepiedetailsSelected.ingredient)
 
   }
 
