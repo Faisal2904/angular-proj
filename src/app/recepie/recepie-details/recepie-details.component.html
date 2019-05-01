@@ -1,0 +1,40 @@
+<!-- <p>Recepie details component</p> -->
+<div class="row">
+  <div class="col-xs-12">
+    <img src="" class="img-responsive" style="max-height:50px;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{recepiedetailsSelected.name}}</h1>
+  </div>
+ </div>
+
+ <div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group" appDropdown >
+    <button type="button" class="btn btn-primary dropdown-toggle">
+      Manage recepie 
+      <span class="caret"></span>
+      </button>
+     <ul class="dropdown-menu" >
+           <li><a href="#">Add shopping list</a></li>
+            <li><a href="#">Edit recepie</a></li>
+            <li><a href="#">delete recepie</a></li>
+         </ul>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+   {{recepiedetailsSelected.description}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+   Ingredient
+  </div>
+</div>
