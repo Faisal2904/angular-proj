@@ -8,7 +8,7 @@ export class RecepieService{
    recepieSelected=new EventEmitter<Recepie>();
 
 private recepie:Recepie[]=[
-    new Recepie('pizza','this is a test','hdfadhad',[
+    new Recepie('pizza','this is a test','C:\Users\mdfaisal.iqbal\Desktop',[
       new Ingredient('dough',1),
       new Ingredient('olive',1)
       ]),
