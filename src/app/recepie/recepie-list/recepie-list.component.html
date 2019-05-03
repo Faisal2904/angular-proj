@@ -3,7 +3,7 @@
     <div class="col-xs-12" >
       
       
-       <app-recepie-item *ngFor="let x of recepie"  [recepie]="x"  ></app-recepie-item>
+       <app-recepie-item *ngFor="let x of recepie; let i=index"  [recepie]="x" [index]="i" ></app-recepie-item>
     </div>
   </div>
  

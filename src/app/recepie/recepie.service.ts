@@ -25,6 +25,9 @@ private recepie:Recepie[]=[
   getRecepie(){
     return this.recepie.slice();
   }
+  getRecepies(index:number){
+    return this.recepie[index];
+  }
 
   addIngredienttoShoppingist(ingredients:Ingredient[]){
   this.shoppingService.addIngredient(ingredients);
